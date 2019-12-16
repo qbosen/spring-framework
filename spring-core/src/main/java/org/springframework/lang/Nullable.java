@@ -50,6 +50,7 @@ import javax.annotation.meta.When;
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Nonnull(when = When.MAYBE)
+// NOTES: 2019/12/16  @TypeQualifierNickname 注解会将所有除自己外的所有其他注解直接应用到目标上, 仅限于Qualifier这一类
 @TypeQualifierNickname
 public @interface Nullable {
 }

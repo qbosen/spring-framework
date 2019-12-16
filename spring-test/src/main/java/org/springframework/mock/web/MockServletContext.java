@@ -70,6 +70,8 @@ import org.springframework.web.util.WebUtils;
  * We generally do not recommend to unit test your ServletContainerInitializers and
  * WebApplicationInitializers which is where those registration methods would be used.
  *
+ * notes 支持的特性有限，不适合做容器初始化的测试
+ *
  * <p>For setting up a full {@code WebApplicationContext} in a test environment, you can
  * use {@code AnnotationConfigWebApplicationContext}, {@code XmlWebApplicationContext},
  * or {@code GenericWebApplicationContext}, passing in a corresponding
