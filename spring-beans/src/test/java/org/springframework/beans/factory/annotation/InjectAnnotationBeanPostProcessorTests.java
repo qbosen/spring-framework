@@ -70,6 +70,7 @@ public class InjectAnnotationBeanPostProcessorTests {
 		bpp = new AutowiredAnnotationBeanPostProcessor();
 		bpp.setBeanFactory(bf);
 		bf.addBeanPostProcessor(bpp);
+		// NOTES: 2019/12/16 自动注入备选bean的策略解析器, 这里通过@Qualifier 选择候选bean
 		bf.setAutowireCandidateResolver(new QualifierAnnotationAutowireCandidateResolver());
 	}
 
